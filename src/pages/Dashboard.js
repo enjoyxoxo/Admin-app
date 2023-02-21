@@ -1,10 +1,10 @@
 import React from 'react';
 import './Dashboard.css';
 
-const dashboard = () => {
+const Dashboard = () => {
   return <>
   
   </>
 }
 
-export default dashboard;
+export default Dashboard;

@@ -8,16 +8,18 @@ import MainLayout from './Components/MainLayout';
 
 
 function App() {
-  return <Router>
+  return (
+   <Router>
      <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/reset-password" element={<Resetpassword />} />
         <Route path="/forgot-password" element={<Forgotpassword />} />
-        <Route path="/admin" element={<MainLayout />}>
-           <Route index element={<Dashboard />} />
+        <Route path="/admin" element={<MainLayout />} >
+        <Route  index element={<Dashboard />} />
         </Route>
      </Routes>
   </Router>
+  );
 }
 
 export default App;
