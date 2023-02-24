@@ -1,7 +1,7 @@
 .green {
-  color: green;
+  color: var(#47ad24);
 }
 
 .red {
-  color: red;
+  color: var(#212529)
 }

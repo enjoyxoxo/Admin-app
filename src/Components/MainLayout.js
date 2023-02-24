@@ -77,7 +77,7 @@ const MainLayout = () => {
                   label: "Brand",
                 },
                 {
-                  key: "list-brand",
+                  key: "brand-list",
                   icon: <SiBrandfolder className='fs-4' />,
                   label: "Brand List",
                 },
@@ -87,7 +87,7 @@ const MainLayout = () => {
                   label: "Category",
                 },
                 {
-                  key: "list-category",
+                  key: "category-list",
                   icon: <BiCategoryAlt className='fs-4' />,
                   label: "Category List",
                 },
@@ -97,7 +97,7 @@ const MainLayout = () => {
                   label: "Color",
                 },
                 {
-                  key: "list-color",
+                  key: "color-list",
                   icon: <AiOutlineBgColors className='fs-4' />,
                   label: "Color List",
                 }
@@ -131,7 +131,7 @@ const MainLayout = () => {
                 {
                   key: 'blog-category-list',
                   icon: <FaBloggerB className='fs-4' />,
-                  label: 'Add Blog Category List',
+                  label: 'Blog Category List',
                 }
               ]
             },

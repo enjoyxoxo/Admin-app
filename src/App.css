@@ -1,3 +1,22 @@
+:root {
+  --color-212529: #212529;
+  --color-0d6efd: ##0d6efd;
+  --color-47ad24: #47ad24;
+  --color-e52e2e: #e52e2e;
+  --color-828599: #828599;
+  --color-3d464d: #3d464d;
+  --color-c3d4da: #c3d4da;
+}
+
 body {
   font-family: Roboto, sans-serif;
+}
+
+.quill {
+  background-color: white;
+}
+
+.form-control {
+  box-shadow: none;
+  border-color: var(--color-c3d4da);
 }

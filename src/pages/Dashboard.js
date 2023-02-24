@@ -112,7 +112,7 @@ const Dashboard = () => {
       },
     },
   };
-  return <>
+  return (
    <div>
      <h3 className='mb-4'>Dashboard</h3>
      <div className='d-flex justify-content-between align-items-center gap-3'>
@@ -144,24 +144,25 @@ const Dashboard = () => {
          </div>
        </div>
      </div>
-     <div className='mt-4'>
-       <h3 className='mb-4'>Income Statics</h3>
-       <div>
-         return <Column {...config} />;
-       </div>
+     <div className='d-flex gap-3 justify-content-between'>
+        <div className='mt-4 flex-grow-1'>
+          <h3 className='mb-4'>Income Statics</h3>
+          <div>
+            <Column {...config} />;
+          </div>
+        </div>
+        <div className="mt-4">
+          <h3 className="mb-4">Recent Orders</h3>
+          <div>
+            <Table 
+              columns={columns} 
+              dataSource={data1} 
+            />
+          </div>
+        </div>
      </div>
-     <div className="mt-4">
-       <h3 className="mb-4">Recent Orders</h3>
-       <div>
-         <Table 
-           columns={columns} 
-           dataSource={data1} 
-         />
-       </div>
-     </div>
-     
    </div>
-  </>
+  )
 }
 
 export default Dashboard;
