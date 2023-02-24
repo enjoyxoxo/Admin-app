@@ -12,6 +12,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .quill {
   background-color: white;
 }
@@ -19,4 +23,22 @@ body {
 .form-control {
   box-shadow: none;
   border-color: var(--color-c3d4da);
+}
+
+.title {
+  font-size: 28px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
+}
+
+.sub-title {
+  font-size: 24px;
+  font-family: Roboto !important;
+  color: var(--color-212529);
+}
+
+.desc {
+  font-size: 14px;
+  font-family: Roboto !important;
+  color: var(--color-8285990);
 }

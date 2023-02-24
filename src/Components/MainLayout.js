@@ -10,7 +10,7 @@ import {
   AiOutlineUser,
   AiOutlineBgColors,
 } from 'react-icons/ai';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { SiBrandfolder } from 'react-icons/si';
 import { BiCategoryAlt } from 'react-icons/bi';
 import { FaClipboardList, FaBloggerB } from 'react-icons/fa';
@@ -160,15 +160,23 @@ const MainLayout = () => {
               <IoIosNotifications className='fs-4' />
               <span className='badge bg-warning rounded-circle p-1 position-absolute'>3</span>
             </div>
-            <div className='d-flex gap-3 align-items-center'>
+            <div className="d-flex gap-3 align-items-center dropdown">
               <div>
                 <img width={32}
                   height={32}
                   src="https://stroyka-admin.html.themeforest.scompiler.ru/variants/ltr/images/customers/customer-4-64x64.jpg" alt="" />
               </div>
-              <div>
+              <div role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <h5 className='mb-0'>Meduexpress</h5>
                 <p className='mb-0'>palito0277@gmail.com</p>
+              </div>
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <Link><a className="dropdown-item py-1 mb-1" style={{ "height":"auto", lineHeight: "20px" }} to="/">View Profile</a></Link>
+                </li>
+                <li>
+                  <Link><a className="dropdown-item py-1 mb-1" style={{ "height":"auto", lineHeight: "20px" }} to="/">Sign Out</a></Link>
+                </li>
               </div>
             </div>
           </div>
